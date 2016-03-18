@@ -1,0 +1,94 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#header {
+  /*border: 1px solid black;*/
+}
+
+#home-link {
+  display: inline-block;
+  padding: 2px;
+}
+
+#home-link a:link, #logout-link a:link, #login-link a:link, #signup-link a:link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+#home-link a:hover, #logout-link a:hover, #login-link a:hover, #signup-link a:hover {
+  /*color: white;*/
+}
+
+#logged-in-link, #logout-link, #login-link, #signup-link {
+  float: right;
+  padding: 2px;
+}
+
+#logout-link, #login-link {
+  margin-left: 10px;
+}
+
+#home-link, #logout-link, #login-link, #signup-link {
+  border: 1px solid black;
+  border-color: rgb(76, 175, 80);
+}
+
+#home-link:hover, #logout-link:hover, #login-link:hover, #signup-link:hover {
+  background-color: rgb(76, 175, 80);
+}
+
+
+
+
+
+
+/* Form */
+
+#form-heading {
+  text-align: center;
+}
+
+#form-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    height: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+#table-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

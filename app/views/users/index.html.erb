@@ -1,0 +1,31 @@
+<h1 id="form-heading">All Users</h1>
+
+<table id="table-container" border="1">
+
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Sign In Count</th>
+    </tr>
+  
+  <% @users.each do |user| %>
+
+  <tr>
+
+    <td align="center">
+      <%= user.name %>
+    </td>
+
+    <td align="center">
+      <%= user.email %>
+    </td>
+
+    <td align="center">
+    <%= user.sign_in_count %>
+    </td>
+
+  </tr>
+
+  <% end %>
+
+</table>

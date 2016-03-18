@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LoginCount</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <header id="header">
+    
+    <div id="home-link"><%= link_to "Home", root_url %></div>
+
+    <% if logged_in? %>
+      <span id="logout-link"><%= link_to "Log out", logout_path, method: "delete" %></span> 
+      <span id="logged-in-link">Logged In As: <%= current_user.name %> </span>
+    <% else %>
+      <span id="login-link"><%= link_to "Log in", login_path %></span>
+      <span id="signup-link"><%= link_to "Sign Up", new_user_path %></span>
+    <% end %>
+
+  </header>
+
+  <% if flash[:notice]%>
+    <div><%= flash[:notice] %></div>
+  <% end %>
+
+  <% if flash[:alert]%>
+    <div><%= flash[:alert] %></div>
+  <% end %>
+
+
+<%= yield %>
+
+</body>
+</html>
